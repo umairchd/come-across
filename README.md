@@ -80,8 +80,8 @@ If you're still having trouble, feel free to reach out to
 - Install docker
 - Install docker-compose
 - docker-compose build
-- docker-compose run web rails db:create db:create
-- docker-compose run web rails db:create db:migrate
+- docker-compose run web rails db:create
+- docker-compose run web rails db:migrate
 
 ## Database creation & initialization
 - `rails db:create`
