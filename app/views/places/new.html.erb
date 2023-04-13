@@ -1,0 +1,141 @@
+<div class="container py-5">
+  <div class="shadow-sm p-4 create_place_form">
+    <h4 class="mb-0">Create Place</h4>
+    <p class="mb-4">Enter details about the place.</p>
+    <%= form_with(model: @place) do |form| %>
+      <div class="mb-3">
+        <%= form.label :name, class: "form-label" %>
+        <%= form.text_field :name, class: "form-control" %>
+      </div>
+      <div class="mb-3">
+        <%= form.label :date, class: "form-label" %>
+        <%= form.date_field :date, class: "form-control" %>
+      </div>
+      <div class="mb-3">
+        <%= form.label :images, class: "form-label" %>
+        <%= form.file_field :images, multiple: true, class: "form-control" %>
+      </div>
+
+      <div class="my-4">
+        <div class="d-flex g-5 align-items-center">
+          <h6 class="mb-0">Food</h6>
+          <div class="container-wrapper">
+            <!-- star rating -->
+            <div class="rating-wrapper">
+              <!-- star 5 -->
+              <input type="radio" id="5-star-food-rating" name="food-star-rating" value="5">
+              <label for="5-star-food-rating" class="star-rating">
+                <i class="fa fa-star d-inline-block"></i>
+              </label>
+
+              <!-- star 4 -->
+              <input type="radio" id="4-star-food-rating" name="food-star-rating" value="4">
+              <label for="4-star-food-rating" class="star-rating star">
+                <i class="fa fa-star d-inline-block"></i>
+              </label>
+
+              <!-- star 3 -->
+              <input type="radio" id="3-star-food-rating" name="food-star-rating" value="3">
+              <label for="3-star-food-rating" class="star-rating star">
+                <i class="fa fa-star d-inline-block"></i>
+              </label>
+
+              <!-- star 2 -->
+              <input type="radio" id="2-star-food-rating" name="food-star-rating" value="2">
+              <label for="2-star-food-rating" class="star-rating star">
+                <i class="fa fa-star d-inline-block"></i>
+              </label>
+
+              <!-- star 1 -->
+              <input type="radio" id="1-star-food-rating" name="food-star-rating" value="1">
+              <label for="1-star-food-rating" class="star-rating star">
+                <i class="fa fa-star d-inline-block"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex g-5 align-items-center">
+          <h6 class="mb-0">Landscape</h6>
+          <div class="container-wrapper">
+            <!-- star rating -->
+            <div class="rating-wrapper">
+              <!-- star 5 -->
+              <input type="radio" id="5-star-landscape-rating" name="landscape-star-rating" value="5">
+              <label for="5-star-landscape-rating" class="star-rating">
+                <i class="fa fa-star d-inline-block"></i>
+              </label>
+
+              <!-- star 4 -->
+              <input type="radio" id="4-star-landscape-rating" name="landscape-star-rating" value="4">
+              <label for="4-star-landscape-rating" class="star-rating star">
+                <i class="fa fa-star d-inline-block"></i>
+              </label>
+
+              <!-- star 3 -->
+              <input type="radio" id="3-star-landscape-rating" name="landscape-star-rating" value="3">
+              <label for="3-star-landscape-rating" class="star-rating star">
+                <i class="fa fa-star d-inline-block"></i>
+              </label>
+
+              <!-- star 2 -->
+              <input type="radio" id="2-star-landscape-rating" name="landscape-star-rating" value="2">
+              <label for="2-star-landscape-rating" class="star-rating star">
+                <i class="fa fa-star d-inline-block"></i>
+              </label>
+
+              <!-- star 1 -->
+              <input type="radio" id="1-star-landscape-rating" name="landscape-star-rating" value="1">
+              <label for="1-star-landscape-rating" class="star-rating star">
+                <i class="fa fa-star d-inline-block"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex g-5 align-items-center">
+          <h6 class="mb-0">People / Culture</h6>
+          <div class="container-wrapper">
+            <!-- star rating -->
+            <div class="rating-wrapper">
+              <!-- star 5 -->
+              <input type="radio" id="5-star-people-rating" name="people-star-rating" value="5">
+              <label for="5-star-people-rating" class="star-rating">
+                <i class="fa fa-star d-inline-block"></i>
+              </label>
+
+              <!-- star 4 -->
+              <input type="radio" id="4-star-people-rating" name="people-star-rating" value="4">
+              <label for="4-star-people-rating" class="star-rating star">
+                <i class="fa fa-star d-inline-block"></i>
+              </label>
+
+              <!-- star 3 -->
+              <input type="radio" id="3-star-people-rating" name="people-star-rating" value="3">
+              <label for="3-star-people-rating" class="star-rating star">
+                <i class="fa fa-star d-inline-block"></i>
+              </label>
+
+              <!-- star 2 -->
+              <input type="radio" id="2-star-people-rating" name="people-star-rating" value="2">
+              <label for="2-star-people-rating" class="star-rating star">
+                <i class="fa fa-star d-inline-block"></i>
+              </label>
+
+              <!-- star 1 -->
+              <input type="radio" id="1-star-people-rating" name="people-star-rating" value="1">
+              <label for="1-star-people-rating" class="star-rating star">
+                <i class="fa fa-star d-inline-block"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <%= form.fields_for :ratings do |rating_fields| %>
+          <%= rating_fields.hidden_field :value %>
+          <%= rating_fields.hidden_field :category%>
+      <% end %>
+
+      <%= form.submit class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

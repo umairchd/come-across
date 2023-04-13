@@ -1,0 +1,231 @@
+/*!**/
+/* * This is a manifest file that'll be compiled into application.css, which will include all the files*/
+/* * listed below.*/
+/* **/
+/* * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's*/
+/* * vendor/assets/stylesheets directory can be referenced here using a relative path.*/
+/* **/
+/* * You're free to add application-wide styles to this file and they'll appear at the bottom of the*/
+/* * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS*/
+/* * files in this directory. Styles in this file should be added after the last require_* statement.*/
+/* * It is generally better to create a new file per style scope.*/
+/* **/
+/* *= require_tree .*/
+/* *= require_self*/
+/* *!*/
+
+/*!* Place show page *!*/
+
+/** {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*img {*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*}*/
+/*.carousel_image {*/
+/*    height: 300px;*/
+/*    overflow: hidden;*/
+/*}*/
+/*.carousel-item {*/
+/*    flex: 0 0 50%;*/
+/*    max-width: 50%;*/
+/*}*/
+
+/*.carousel_image img {*/
+/*    object-fit: cover;*/
+/*    object-position: center;*/
+/*    height: 100%;*/
+/*}*/
+
+/*.slick-arrow {*/
+/*    z-index: 10;*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*}*/
+/*.slick-prev.slick-arrow {*/
+/*    left: 20px;*/
+/*}*/
+/*.slick-next.slick-arrow {*/
+/*    right: 20px;*/
+/*}*/
+/*.slick-prev:before,*/
+/*.slick-next:before {*/
+/*    font-size: 40px;*/
+/*}*/
+/*@media (max-width: 767px) {*/
+/*    .carousel-inner .carousel-item > div {*/
+/*        display: none;*/
+/*    }*/
+/*    .carousel-inner .carousel-item > div:first-child {*/
+/*        display: block;*/
+/*    }*/
+/*}*/
+
+/*.carousel-inner .carousel-item.active,*/
+/*.carousel-inner .carousel-item-next,*/
+/*.carousel-inner .carousel-item-prev {*/
+/*    display: flex;*/
+/*}*/
+
+/*!* medium and up screens *!*/
+/*@media (min-width: 768px) {*/
+/*    .carousel-inner .carousel-item-end.active,*/
+/*    .carousel-inner .carousel-item-next {*/
+/*        transform: translateX(33.33%);*/
+/*    }*/
+
+/*    .carousel-inner .carousel-item-start.active,*/
+/*    .carousel-inner .carousel-item-prev {*/
+/*        transform: translateX(-33.33%);*/
+/*    }*/
+/*}*/
+
+/*.carousel-inner .carousel-item-end,*/
+/*.carousel-inner .carousel-item-start {*/
+/*    transform: translateX(0);*/
+/*}*/
+
+/*.rating-wrapper {*/
+/*    display: inline-flex;*/
+/*    direction: rtl !important;*/
+/*    margin-left: auto;*/
+/*}*/
+/*.rating-wrapper label {*/
+/*    color: #e1e6f6;*/
+/*    cursor: pointer;*/
+/*    display: inline-flex;*/
+/*    font-size: 2rem;*/
+/*    padding: 1rem 0.6rem;*/
+/*    transition: color 0.5s;*/
+/*}*/
+/*.rating-wrapper svg {*/
+/*    -webkit-text-fill-color: transparent;*/
+/*    -webkit-filter: drop-shadow 4px 1px 6px rgba(198, 206, 237, 1);*/
+/*    filter: drop-shadow(5px 1px 3px rgba(198, 206, 237, 1));*/
+/*}*/
+/*.rating-wrapper input {*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*}*/
+/*.rating-wrapper input {*/
+/*    display: none;*/
+/*}*/
+/*.rating-wrapper label:hover,*/
+/*.rating-wrapper label:hover ~ label,*/
+/*.rating-wrapper input:checked ~ label {*/
+/*    color: #fbc634;*/
+/*}*/
+/*.rating-wrapper label:hover,*/
+/*.rating-wrapper label:hover ~ label,*/
+/*.rating-wrapper input:checked ~ label {*/
+/*    color: #fbc634;*/
+/*}*/
+
+/*.post_btn {*/
+/*    min-width: 150px;*/
+/*}*/
+
+/*.cmt_blk .details {*/
+/*    margin-top: 30px;*/
+/*    display: flex;*/
+/*    gap: 12px;*/
+/*    align-items: center;*/
+/*}*/
+/*.cmt_blk .details .profile_img {*/
+/*    width: 56px;*/
+/*    height: 56px;*/
+/*    min-width: 56px;*/
+/*    border-radius: 75%;*/
+/*    overflow: hidden;*/
+/*}*/
+/*.cmt_blk .details .profile_img img {*/
+/*    object-fit: cover;*/
+/*    object-position: center;*/
+/*    height: 100%;*/
+/*}*/
+
+/*.cmt_blk .comt {*/
+/*    margin-top: 10px;*/
+/*    margin-bottom: 0;*/
+/*}*/
+
+/*!* Places index page *!*/
+
+/** {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*img {*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*}*/
+/*.carousel_image {*/
+/*    height: 300px;*/
+/*    overflow: hidden;*/
+/*}*/
+/*.carousel-item {*/
+/*    flex: 0 0 50%;*/
+/*    max-width: 50%;*/
+/*}*/
+
+/*.carousel_image img {*/
+/*    object-fit: cover;*/
+/*    object-position: center;*/
+/*    height: 100%;*/
+/*}*/
+
+/*.slick-arrow {*/
+/*    z-index: 10;*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*}*/
+/*.slick-prev.slick-arrow {*/
+/*    left: 20px;*/
+/*}*/
+/*.slick-next.slick-arrow {*/
+/*    right: 20px;*/
+/*}*/
+/*.slick-prev:before,*/
+/*.slick-next:before {*/
+/*    font-size: 40px;*/
+/*}*/
+/*@media (max-width: 767px) {*/
+/*    .carousel-inner .carousel-item > div {*/
+/*        display: none;*/
+/*    }*/
+/*    .carousel-inner .carousel-item > div:first-child {*/
+/*        display: block;*/
+/*    }*/
+/*}*/
+
+/*.carousel-inner .carousel-item.active,*/
+/*.carousel-inner .carousel-item-next,*/
+/*.carousel-inner .carousel-item-prev {*/
+/*    display: flex;*/
+/*}*/
+
+/*!* medium and up screens *!*/
+/*@media (min-width: 768px) {*/
+/*    .carousel-inner .carousel-item-end.active,*/
+/*    .carousel-inner .carousel-item-next {*/
+/*        transform: translateX(33.33%);*/
+/*    }*/
+
+/*    .carousel-inner .carousel-item-start.active,*/
+/*    .carousel-inner .carousel-item-prev {*/
+/*        transform: translateX(-33.33%);*/
+/*    }*/
+/*}*/
+
+/*.carousel-inner .carousel-item-end,*/
+/*.carousel-inner .carousel-item-start {*/
+/*    transform: translateX(0);*/
+/*}*/
